@@ -6,7 +6,7 @@
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
 **Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
-**Notebook ejecutable:** [[AGREGAR ENLACE A COLAB O AL NOTEBOOK DE SU FORK]](https://colab.research.google.com/drive/1ZvEdOYmCLwYHS6igg_OlrBlz8Qim5qI-)
+**Notebook ejecutable:** [Enlace](https://colab.research.google.com/drive/1ZvEdOYmCLwYHS6igg_OlrBlz8Qim5qI-)
 
 ## 1. Formulación y PEAS
 
