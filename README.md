@@ -6,7 +6,7 @@
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
 **Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
-**Notebook ejecutable:** [Enlace](https://colab.research.google.com/drive/1ZvEdOYmCLwYHS6igg_OlrBlz8Qim5qI-)
+**Notebook ejecutable:** [Enlace](https://colab.research.google.com/github/ziggyel/hackaton-iia-uade-2026-ayelen/blob/main/T19%20-%20Primera%20versi%C3%B3n%20del%20sistema%20de%20reglas.ipynb#scrollTo=05a2435c)
 
 ## 1. Formulación y PEAS
 
