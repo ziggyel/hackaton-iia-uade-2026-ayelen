@@ -2,7 +2,7 @@
 
 > Hackatón IIA · UADE · 3.4.257 · 3 de noviembre de 2026.
 
-**Integrantes:** Ayelen Mendoza Luque  
+**Integrante (grupo individual):** Ayelen Mendoza Luque  
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
 **Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
@@ -113,10 +113,10 @@ Suma: 2 + 2 + 0 + 2 = **6**.
 
 | Corrida | Nota | Agujero que encontró | Qué cambiamos |
 | --- | --- | --- | --- |
-| **1 (3/11/2026)** | **9,5/10** | (1) Los casos 18 y 20 son falsos negativos: el umbral de 45 horas no considera muertes ni progreso contra el jefe. (2) El umbral deriva de solo 14 ejemplos y puede no generalizar a otro juego o muestra. (3) El nombre del integrante en el README no coincide con el registro del grupo T19: requiere confirmación con el profesor. (4) Faltaba registrar esta corrida. | **Documentación:** registramos esta evaluación y las respuestas a sus preguntas. **Modelo:** no cambiamos la regla usando las etiquetas de prueba, porque eso contaminaría la evaluación. **Integrantes:** queda por verificar quiénes figuran oficialmente en T19; no se modifica ningún nombre sin confirmarlo. |
+| **1 (3/11/2026)** | **9,5/10** | (1) Los casos 18 y 20 son falsos negativos: el umbral de 45 horas no considera muertes ni progreso contra el jefe. (2) El umbral deriva de solo 14 ejemplos y puede no generalizar a otro juego o muestra. (3) El bot indicó que el nombre del README no coincide con el registro de T19. La integrante confirmó que trabaja sola; queda verificar el nombre asentado por la cátedra. (4) Faltaba registrar esta corrida. | **Documentación:** registramos esta evaluación y las respuestas a sus preguntas. **Modelo:** no cambiamos la regla usando las etiquetas de prueba, porque eso contaminaría la evaluación. **Integrantes:** se aclaró que T19 es un grupo de una sola integrante. No cambiamos el nombre declarado sin conocer el registro oficial. |
 
 **Respuesta al agujero principal (casos 18 y 20).** El caso **18** tiene **70 horas jugadas, 18 muertes seguidas y 44 % de vida restante del jefe** en su mejor intento. El caso **20** tiene **67 horas jugadas, 22 muertes y 83 % de vida restante del jefe**. Como ambos superan las 45 horas, la regla predice NO, aunque su etiqueta real es SÍ. La regla **no aprovecha las muchas muertes ni el progreso frente al jefe**, que podrían señalar frustración. Tener más horas de juego no significa necesariamente que la persona vaya a continuar. Estos casos muestran una limitación, pero no justifican reajustar la regla mirando las etiquetas de prueba.
 
 **Confiabilidad del umbral.** Las 45 horas resultan del punto medio entre 43 (máximo de horas entre los SÍ de entrenamiento) y 47 (mínimo entre los NO). Con solo **14 registros de entrenamiento**, esa separación puede ser casual o específica de la muestra. Si cambian los jugadores o el juego, la distribución podría cambiar y la regla perder rendimiento. Para mejorarla harían falta más datos de entrenamiento, explorar muertes y vida restante y evaluar cualquier nueva versión en datos de prueba independientes.
 
-**Pendiente de verificar antes de la mesa:** el bot indicó una discrepancia entre la integrante declarada en el encabezado y el registro oficial de T19. Hay que preguntar al profesor quiénes integran el grupo y corregir el encabezado solo con esa confirmación. También falta publicar en LinkedIn y colocar el enlace en el encabezado.
+**Pendiente de verificar antes de la mesa:** la estudiante confirmó que es la única integrante de T19. El bot indicó una discrepancia con el nombre registrado; corresponde consultar al profesor si el nombre que figura en el registro oficial está correcto. No se modificó el nombre declarado sin esa comprobación. También falta publicar en LinkedIn y agregar el enlace.
