@@ -89,7 +89,7 @@ Suma: 2 + 2 + 0 + 2 = **6**.
 | **¿Qué datos?** | 20 casos ficticios del CSV T19, sin datos de personas reales: 14 para entrenamiento y 6 para prueba. |
 | **¿Qué métrica?** | Sensibilidad como prioridad por el costo del falso negativo; también exactitud, precisión, especificidad y conteos de errores. |
 | **¿Comparado contra qué?** | Línea base trivial que siempre responde NO; también consideramos siempre SÍ para evitar una comparación engañosa. |
-| **¿Quién lo midió?** | El grupo, mediante cálculo reproducible en Python, contrastando las predicciones con `resultado_real` del CSV. [CONFIRMAR POR EL GRUPO DESPUÉS DE EJECUTARLO] |
+| **¿Quién lo midió?** | El grupo, mediante cálculo reproducible en Python, contrastando las predicciones con `resultado_real` del CSV. El notebook se ejecutó en Colab y se observaron las métricas de ambos conjuntos. |
 
 ## 6. Riesgo: el camino completo
 
@@ -97,18 +97,22 @@ Suma: 2 + 2 + 0 + 2 = **6**.
 
 ## 7. Bitácora
 
-**Uso de IA (borrador para verificar y completar con las decisiones reales del grupo).** En las interacciones documentadas hasta el momento se utilizó ChatGPT para comprender la consigna, buscar la ficha T19, revisar el CSV y preparar una propuesta inicial. Antes de entregar, el grupo debe registrar qué propuestas aceptó, rechazó o cambió y por qué. No atribuir al grupo acciones que todavía no realizó.
+**Registro del uso de IA — 3 de noviembre de 2026.** Usé ChatGPT como apoyo para interpretar la consigna, ubicar mi ficha y los datos, elegir una solución, preparar el código, calcular las métricas y redactar/revisar el README. Abajo se registran las decisiones que quedaron reflejadas en el proyecto; no se atribuyen consultas al evaluador que todavía no ocurrieron.
 
-| # | Qué le pedimos | Qué aceptamos | Qué rechazamos y por qué |
+| # | Qué le pedí a ChatGPT | Qué acepté o utilicé | Qué descarté, cambié o limité, y por qué |
 | --- | --- | --- | --- |
-| 1 | Explicar las bases de la hackatón y las obligaciones del evaluador. | [COMPLETAR TRAS REVISIÓN DEL GRUPO] | [COMPLETAR TRAS REVISIÓN DEL GRUPO] |
-| 2 | Identificar la problemática T19 y revisar los datos. | [COMPLETAR TRAS REVISIÓN DEL GRUPO] | [COMPLETAR TRAS REVISIÓN DEL GRUPO] |
-| 3 | Proponer un sistema simple de reglas, sus métricas y una estructura README. | [COMPLETAR TRAS REVISIÓN DEL GRUPO] | [COMPLETAR TRAS REVISIÓN DEL GRUPO] |
+| 1 | Explicarme las bases de la hackatón, las pruebas obligatorias y la prohibición de inyección de prompts. | Organicé el proyecto alrededor de la pregunta SÍ/NO, el PEAS, la medición, la comparación y la defensa. | No incluí instrucciones para alterar la corrección del evaluador: está prohibido y no ayuda a demostrar que el sistema funciona. |
+| 2 | Buscar la problemática correspondiente al código T19 y explicar los datos. | Trabajé con la ficha «¿Bajamos la dificultad de este jefe?» y el CSV de 20 casos. Respeté los casos 1–14 como entrenamiento y 15–20 como prueba. | No utilicé la columna de resultado real como entrada ni las etiquetas de prueba para diseñar el umbral: hacerlo filtraría información que no corresponde conocer al decidir. |
+| 3 | Proponer una IA sencilla para resolver el caso y poder ejecutarla en vivo. | Utilicé un **sistema de reglas** con el umbral de **45 horas**, calculado a partir de los valores 43 y 47 observados en entrenamiento. La salida es SÍ/NO y su acción asociada es bajar/mantener dificultad. | No elegí perceptrón ni agente porque, para esta primera versión con pocos registros, la regla es más fácil de reproducir y defender. No agregué muertes ni vida restante a la decisión porque la regla inicial usa solo horas; reconozco esa limitación. |
+| 4 | Preparar las matrices de confusión y las métricas. | Incorporé VP, FN, FP y VN; exactitud, precisión, sensibilidad y especificidad por separado para entrenamiento y prueba. Ejecuté el notebook en Colab y vi los resultados esperados: **14/14 aciertos en entrenamiento y 4/6 en prueba**. | No presenté el 100 % de entrenamiento como prueba de funcionamiento perfecto: en prueba la sensibilidad cae al 50 % y hay dos falsos negativos. |
+| 5 | Explicar el error más caro y comparar contra sistemas triviales. | Priorizé discutir los falsos negativos, porque implican no asistir a alguien que abandonaría. Comparé la regla con **siempre NO** y también con **siempre SÍ**, para mostrar el costo de detectar más abandonos a cambio de bajar dificultad de forma innecesaria. | No tomé «porcentaje de jugadores que derrotan al jefe» como objetivo principal: ganar más peleas no demuestra reducir abandonos ni conservar el desafío. Tampoco ajusté la regla según los seis resultados de prueba. |
+| 6 | Preparar el README y el programa para GitHub. | Copié un borrador del README a mi fork, subí el notebook y el CSV, y registré cambios mediante commits. | Corregí la referencia inicial al nombre del archivo del notebook para que coincida con el subido; también amplié la explicación de la línea base siempre SÍ para no dar una comparación incompleta. |
+| 7 | Guiarme para probar el programa en Google Colab y encontrar las salidas. | Ejecuté las celdas, pude ver las métricas y la demostración de un caso nuevo. El ejemplo **12 muertes, 55 % de vida restante, 35 horas** produjo **SÍ: bajar dificultad**. | No cambié el umbral después de ver la prueba: mantuve la separación entre construcción con entrenamiento y evaluación con prueba. |
 
-**Corridas contra el evaluador.**
+**Corridas contra el evaluador.** Esta sección se completará con las respuestas reales de Telegram; no se inventan notas ni preguntas.
 
 | Corrida | Nota | Agujero que encontró | Qué cambiamos |
 | --- | --- | --- | --- |
-| **Pendiente** | — | Todavía no se consultó al bot. | — |
+| **Pendiente** | — | Aún no se envió el README al bot. | — |
 
-> Antes de entregar: completar los integrantes, verificar el código en Colab, hacer commits reales en el fork, completar la bitácora con sus decisiones y pegar acá las respuestas reales del bot. Publicar en LinkedIn y agregar el enlace. No inventar evaluaciones.
+> Antes de entregar: enviar el README completo al evaluador, anotar cada nota y corrección real, publicar en LinkedIn y agregar arriba el enlace. La ejecución en Colab ya fue comprobada.
