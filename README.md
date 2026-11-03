@@ -2,7 +2,7 @@
 
 > Hackatón IIA · UADE · 3.4.257 · 3 de noviembre de 2026.
 
-**Integrante (grupo individual):** Ayelen Mendoza Luque  
+**Integrantes:** Ayelen Mendoza Luque (grupo individual)  
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
 **Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
