@@ -1,0 +1,21 @@
+caso,conjunto,Muertes seguidas (contra el jefe),Vida que le dejó al jefe (% en el mejor intento),Horas jugadas (en total),Jugadores que derrotan al jefe (% global),resultado_real
+1,entrenamiento,2,69,107,90,0
+2,entrenamiento,11,76,113,79,0
+3,entrenamiento,11,38,42,35,1
+4,entrenamiento,12,57,11,42,1
+5,entrenamiento,22,8,47,90,0
+6,entrenamiento,5,11,91,77,0
+7,entrenamiento,3,88,5,35,1
+8,entrenamiento,8,57,14,44,1
+9,entrenamiento,2,25,106,75,0
+10,entrenamiento,8,64,40,39,1
+11,entrenamiento,10,77,101,71,0
+12,entrenamiento,3,45,51,28,0
+13,entrenamiento,15,78,34,61,1
+14,entrenamiento,25,51,43,12,1
+15,prueba,14,43,41,48,1
+16,prueba,5,31,69,55,0
+17,prueba,8,45,79,90,0
+18,prueba,18,44,70,6,1
+19,prueba,17,35,17,44,1
+20,prueba,22,83,67,5,1
