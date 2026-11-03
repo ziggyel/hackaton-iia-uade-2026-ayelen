@@ -5,7 +5,7 @@
 **Integrantes:** Ayelen Mendoza Luque (grupo individual)  
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
-**Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
+**Publicación en LinkedIn:** [Ver publicación](https://lnkd.in/p/dhc6XpTa)  
 **Notebook ejecutable:** [Enlace](https://colab.research.google.com/github/ziggyel/hackaton-iia-uade-2026-ayelen/blob/main/T19%20-%20Primera%20versi%C3%B3n%20del%20sistema%20de%20reglas.ipynb#scrollTo=05a2435c)
 
 ## 1. Formulación y PEAS
@@ -124,4 +124,4 @@ Suma: 2 + 2 + 0 + 2 = **6**.
 
 **Respuesta para la defensa sobre los falsos negativos.** En el conjunto de prueba hay 4 jugadores que abandonarían y el sistema deja sin detectar 2; es decir, no recomienda intervenir en **la mitad de los abandonos reales de prueba**. En un juego, el costo posible es perder esos jugadores y su participación futura, aunque estos 20 casos ficticios no permiten calcular una pérdida económica exacta ni demostrar que bajar dificultad habría evitado el abandono. Para disminuir falsos negativos en una **versión posterior**, reuniríamos más ejemplos de entrenamiento y estudiaríamos muertes seguidas y progreso (vida que le quedó al jefe) junto con las horas. Ajustaríamos una regla nueva solo con entrenamiento, compararíamos su sensibilidad y falsos positivos y la evaluaríamos finalmente con un conjunto nuevo nunca usado para ajustar el sistema. No modificamos el umbral actual mirando las etiquetas de los casos 15–20.
 
-**Pendiente de verificar antes de la mesa:** la estudiante confirmó que es la única integrante de T19. El bot indicó una discrepancia con el nombre registrado; corresponde consultar al profesor si el nombre que figura en el registro oficial está correcto. No se modificó el nombre declarado sin esa comprobación. También falta publicar en LinkedIn y agregar el enlace.
+**Pendiente de verificar antes de la mesa:** la estudiante confirmó que es la única integrante de T19. El bot indicó una discrepancia con el nombre registrado; corresponde consultar al profesor si el nombre que figura en el registro oficial está correcto. No se modificó el nombre declarado sin esa comprobación. La publicación en LinkedIn ya está realizada y enlazada en el encabezado.
