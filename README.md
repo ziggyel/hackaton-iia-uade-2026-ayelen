@@ -2,11 +2,11 @@
 
 > Hackatón IIA · UADE · 3.4.257 · 3 de noviembre de 2026.
 
-**Integrantes:** [COMPLETAR INTEGRANTES]  
+**Integrantes:** Ayelen Mendoza Luque  
 **IA declarada:** ChatGPT  
 **Pista:** Reglas  
 **Publicación en LinkedIn:** [AGREGAR ENLACE DESPUÉS DE PUBLICAR]  
-**Notebook ejecutable:** [AGREGAR ENLACE A COLAB O AL NOTEBOOK DE SU FORK]
+**Notebook ejecutable:** [[AGREGAR ENLACE A COLAB O AL NOTEBOOK DE SU FORK]](https://colab.research.google.com/drive/1ZvEdOYmCLwYHS6igg_OlrBlz8Qim5qI-)
 
 ## 1. Formulación y PEAS
 
